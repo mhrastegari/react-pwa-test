@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const baseUrl = mode === "production" ? "/react-pwa-test/" : "/";
-  
+
   return {
     base: baseUrl,
     server: {
@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: "autoUpdate",
+        injectRegister: "auto",
         scope: baseUrl,
         manifest: {
           name: "React PWA Test",
