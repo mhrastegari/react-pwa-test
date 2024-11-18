@@ -5,6 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const baseUrl = mode === "production" ? "/react-pwa-test/" : "/";
+  
   return {
     base: baseUrl,
     server: {
@@ -23,7 +24,7 @@ export default defineConfig(({ mode }) => {
           background_color: "#ffffff",
           display: "standalone",
           orientation: "portrait",
-          start_url: "/",
+          start_url: baseUrl,
           icons: [
             {
               src: "icons/icon-192x192.png",
