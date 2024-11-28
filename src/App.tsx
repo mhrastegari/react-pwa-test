@@ -1,7 +1,9 @@
 export default function App() {
   return (
-    <>
-      <div>React PWA Test</div>
-    </>
+    <main>
+      <div style={{ fontSize: "1rem", color: "dodgerblue" }}>
+        React PWA Test
+      </div>
+    </main>
   );
 }
