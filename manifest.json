@@ -5,7 +5,7 @@
     "start_url": "/react-pwa-test/",
     "scope": "/react-pwa-test/",
     "display": "standalone",
-    "background_color": "#014473",
+    "background_color": "#ffffff",
     "theme_color": "#014473",
     "icons": [
         {
